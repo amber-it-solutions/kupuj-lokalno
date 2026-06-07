@@ -22,30 +22,20 @@ Cursor chats are tied to a workspace. To bring context over:
 - In the new workspace chat, say: *"Read docs/CHAT-HANDOFF.md — this is a new project, kupuj-lokalno. I will give you the full build prompt next."*
 - Optionally attach or paste your full product prompt in that first message.
 
-## GitHub remote (if not created yet)
+## GitHub
 
-From PowerShell, after `gh auth login`:
-
-```powershell
-cd C:\Users\Korisnik\Documents\GitHub\kupuj-lokalno
-gh repo create kupuj-lokalno --public --source=. --remote=origin --push
-```
-
-For the **amber-it-solutions** org instead of your personal account:
+Repository: **https://github.com/amber-it-solutions/kupuj-lokalno**
 
 ```powershell
-gh repo create amber-it-solutions/kupuj-lokalno --public --source=. --remote=origin --push
-```
+git remote -v
+# origin  https://github.com/amber-it-solutions/kupuj-lokalno.git
 
-If the repo already exists on GitHub, only push:
-
-```powershell
-git push -u origin main
+git push origin main
 ```
 
 ## Status
 
-- [ ] GitHub repository created
-- [ ] First push to `origin/main`
+- [x] GitHub repository created (`amber-it-solutions/kupuj-lokalno`)
+- [x] First push to `origin/main`
 - [ ] Full product prompt provided
 - [ ] Implementation started
